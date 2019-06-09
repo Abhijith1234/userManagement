@@ -81,7 +81,7 @@ export class ManageUserComponent implements OnInit {
     }
     await localStorage.setItem('appinessUserData', JSON.stringify(this.appinessUserData));
     await alert('user Saved');
-    this.router.navigate(['allUser']);
+    await this.router.navigate(['allUser']);
   }
 
 }
